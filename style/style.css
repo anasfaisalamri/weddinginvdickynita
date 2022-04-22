@@ -1,0 +1,252 @@
+body {
+  font-family: "merriweather", serif;
+
+  left: 0;
+  top: 0;
+}
+
+.font-petemoss {
+  font-family: "petemoss";
+}
+
+.font-corinthia {
+  font-family: "corinthia";
+}
+
+@media (max-width: 500px) {
+  .pernikahan {
+    padding-top: 85%;
+  }
+
+  .pernikahan h1 {
+    font-size: 70px !important;
+  }
+
+  .pernikahan h4,
+  p {
+    font-size: 18px !important;
+  }
+
+  .garissamping {
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 0px auto;
+  }
+
+  .bgputih {
+    margin-top: -220px !important;
+  }
+
+  section.quote {
+    margin-top: -50px !important;
+  }
+
+  .bg2 {
+    background-color: #986955;
+    padding-bottom: 200px;
+    margin-top: -1px;
+  }
+
+  .sangmempelai {
+    margin-top: -120px !important;
+    font-size: 50px !important;
+  }
+
+  .mempelai {
+    margin-top: -50px !important;
+  }
+
+  .bagiannita {
+    margin-top: -350px !important;
+    padding: 0px 20px;
+  }
+
+  .lengkunganbawah {
+    margin-top: -1px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 885px) {
+  .pernikahan {
+    padding-top: 50%;
+  }
+
+  .pernikahan h1 {
+    font-size: 90px !important;
+  }
+
+  .pernikahan h4,
+  p {
+    font-size: 22px !important;
+  }
+
+  .garissamping {
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 0px auto;
+  }
+
+  .bgputih {
+    margin-top: -520px !important;
+  }
+
+  section.quote {
+    margin-top: -150px !important;
+  }
+
+  .bg2 {
+    background-color: #986955;
+    padding-bottom: 100px;
+    margin-top: -1px;
+  }
+
+  .sangmempelai {
+    margin-top: -260px !important;
+    font-size: 60px !important;
+  }
+
+  .mempelai {
+    margin-top: -150px !important;
+  }
+
+  .bagiannita {
+    margin-top: -380px !important;
+    padding: 0px 20px;
+  }
+
+  .lengkunganbawah {
+    margin-top: -1px;
+  }
+}
+
+.bg1 {
+  /* position: absolute; */
+
+  background-image: url(../assets/img/image1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  width: 100%;
+
+  padding: 0;
+
+  /* z-index: 1; */
+  /* top: 0; */
+  /* left: 0; */
+}
+
+.pernikahan {
+  /* position: relative; */
+  margin-top: 35%;
+}
+
+.pernikahan h1 {
+  font-size: 80px;
+}
+
+.pernikahan h4,
+p {
+  font-size: 22px;
+}
+
+.bgputih {
+  margin-top: -750px;
+}
+
+section.quote {
+  margin-top: -200px;
+}
+
+.kata p {
+  margin-top: -20px;
+  font-size: 18px;
+}
+
+.bg2 {
+  background-color: #986955;
+  margin-top: -1px;
+}
+
+.sangmempelai {
+  margin-top: -550px;
+  font-size: 60px;
+}
+
+.mempelai {
+  margin-top: -450px;
+}
+
+.mempelai h2 {
+  font-size: 65px;
+}
+
+.bagiannita {
+  margin-top: -600px;
+  /* margin-bottom: 500px; */
+}
+
+.lengkunganbawah {
+  margin-top: -1px;
+}
+
+.bagiannita h2 {
+  font-size: 65px;
+}
+
+img.img-mempelai {
+  border-radius: 1000px;
+}
+
+section.acara {
+  /* position: absolute; */
+
+  background-image: url(../assets/img/image2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  /* max-width: 1440px; */
+
+  height: 100%;
+  height: auto;
+
+  /* z-index: -1; */
+}
+
+section.acara .isi-acara {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+
+  border-radius: 30px;
+
+  margin-top: 400px;
+  padding-top: 50px;
+}
+
+.isi-acara h2 {
+  font-size: 80px;
+}
+
+.garisturun {
+  width: 5px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0px auto;
+}
+
+hr.garissamping {
+  height: 5px;
+  background-color: white !important;
+  opacity: 1 !important;
+  border-radius: 10px !important;
+}
+
+.acaranikah {
+  line-height: 25px;
+}
