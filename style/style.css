@@ -1,6 +1,8 @@
 body {
   font-family: "merriweather", serif;
 
+  font-size: 18px;
+
   left: 0;
   top: 0;
 }
@@ -13,114 +15,42 @@ body {
   font-family: "corinthia";
 }
 
-@media (max-width: 500px) {
-  .pernikahan {
-    padding-top: 85%;
-  }
-
-  .pernikahan h1 {
-    font-size: 70px !important;
-  }
-
-  .pernikahan h4,
-  p {
-    font-size: 18px !important;
-  }
-
-  .garissamping {
-    width: 300px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: red;
-    margin: 0px auto;
-  }
-
-  .bgputih {
-    margin-top: -220px !important;
-  }
-
-  section.quote {
-    margin-top: -50px !important;
-  }
-
-  .bg2 {
-    background-color: #986955;
-    padding-bottom: 200px;
-    margin-top: -1px;
-  }
-
-  .sangmempelai {
-    margin-top: -120px !important;
-    font-size: 50px !important;
-  }
-
-  .mempelai {
-    margin-top: -50px !important;
-  }
-
-  .bagiannita {
-    margin-top: -350px !important;
-    padding: 0px 20px;
-  }
-
-  .lengkunganbawah {
-    margin-top: -1px;
-  }
+.btn-outline-white {
+  /* background-color: transparent; */
+  border: 2px solid #f8f9fa;
+  color: #f8f9fa;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 6px;
 }
 
-@media (min-width: 768px) and (max-width: 885px) {
-  .pernikahan {
-    padding-top: 50%;
-  }
+.btn-outline-white:hover {
+  color: #fff;
+  background-color: #986955;
+  border-color: #775141;
+}
 
-  .pernikahan h1 {
-    font-size: 90px !important;
-  }
+.btn-outline-white:focus {
+  box-shadow: 0 0 0 0.25rem rgba(221, 221, 221, 0.5);
+}
 
-  .pernikahan h4,
-  p {
-    font-size: 22px !important;
-  }
+.btn-outline-brown {
+  /* background-color: transparent; */
+  border: 2px solid #986955;
+  color: #986955;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 6px;
+}
 
-  .garissamping {
-    width: 300px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: red;
-    margin: 0px auto;
-  }
+.btn-outline-brown:hover {
+  color: #fff;
+  background-color: #986955;
+  border-color: #775141;
+}
 
-  .bgputih {
-    margin-top: -520px !important;
-  }
-
-  section.quote {
-    margin-top: -150px !important;
-  }
-
-  .bg2 {
-    background-color: #986955;
-    padding-bottom: 100px;
-    margin-top: -1px;
-  }
-
-  .sangmempelai {
-    margin-top: -260px !important;
-    font-size: 60px !important;
-  }
-
-  .mempelai {
-    margin-top: -150px !important;
-  }
-
-  .bagiannita {
-    margin-top: -380px !important;
-    padding: 0px 20px;
-  }
-
-  .lengkunganbawah {
-    margin-top: -1px;
-  }
+.btn-outline-brown:focus {
+  box-shadow: 0 0 0 0.25rem rgba(221, 221, 221, 0.5);
 }
 
 .bg1 {
@@ -143,6 +73,7 @@ body {
 .pernikahan {
   /* position: relative; */
   margin-top: 35%;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 .pernikahan h1 {
@@ -215,6 +146,8 @@ section.acara {
   height: 100%;
   height: auto;
 
+  margin-top: -10px;
+
   /* z-index: -1; */
 }
 
@@ -249,4 +182,202 @@ hr.garissamping {
 
 .acaranikah {
   line-height: 25px;
+}
+
+section.reservasi {
+  color: #986955;
+}
+
+section.reservasi hr.garissamping {
+  background-color: #986955 !important;
+  height: 2px;
+}
+
+section.reservasi img {
+  width: 150px;
+  color: #986955;
+}
+
+section.reservasi h1 {
+  font-size: 80px;
+}
+
+section.reservasi h2 {
+  font-size: 65px;
+}
+
+section.gallery .ourgallery {
+  margin-top: -450px;
+}
+
+section.gallery .ourgallery h1 {
+  font-size: 80px;
+}
+
+section.gallery .ourgallery hr.garissamping {
+  width: 140px;
+  height: 2px;
+  margin: auto;
+}
+
+section.gallery .bggallery {
+  background-color: #986955;
+  padding-bottom: 400px;
+}
+
+section.gallery .bggallery img {
+  border-radius: 1000px;
+}
+
+section.gallery .imggallery {
+  margin-top: -120px;
+}
+
+section.gallery .imglengkung img {
+  margin-top: -1150px;
+  border-radius: 1000px;
+}
+
+section.terimakasih {
+  color: #986955;
+}
+
+section.terimakasih hr.garissamping {
+  background-color: #986955 !important;
+  height: 2px;
+}
+
+/* responsive */
+@media (max-width: 500px) {
+  .pernikahan {
+    padding-top: 85%;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .pernikahan h1 {
+    font-size: 70px !important;
+  }
+
+  .pernikahan h4,
+  p {
+    font-size: 18px !important;
+  }
+
+  .garissamping {
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 0px auto;
+  }
+
+  .bgputih {
+    margin-top: -220px !important;
+  }
+
+  section.quote {
+    margin-top: -50px !important;
+  }
+
+  .bg2 {
+    background-color: #986955;
+    padding-bottom: 250px;
+    margin-top: -1px;
+  }
+
+  .sangmempelai {
+    margin-top: -100px !important;
+    font-size: 50px !important;
+  }
+
+  .mempelai {
+    margin-top: -0px !important;
+  }
+
+  .bagiannita {
+    margin-top: -350px !important;
+    padding: 0px 20px;
+  }
+
+  .lengkunganbawah {
+    margin-top: -55px;
+  }
+
+  section.acara {
+    margin-top: -50px;
+  }
+
+  section.acara .isi-acara {
+    border-radius: 0;
+    margin-top: 200px;
+  }
+
+  section.reservasi h1,
+  h2 {
+    font-size: 50px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 885px) {
+  .pernikahan {
+    padding-top: 50%;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .pernikahan h1 {
+    font-size: 90px !important;
+  }
+
+  .pernikahan h4,
+  p {
+    font-size: 22px !important;
+  }
+
+  .garissamping {
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 0px auto;
+  }
+
+  .bgputih {
+    margin-top: -520px !important;
+  }
+
+  section.quote {
+    margin-top: -150px !important;
+  }
+
+  .bg2 {
+    background-color: #986955;
+    padding-bottom: 100px;
+    margin-top: -1px;
+  }
+
+  .sangmempelai {
+    margin-top: -260px !important;
+    font-size: 60px !important;
+  }
+
+  .mempelai {
+    margin-top: -100px !important;
+  }
+
+  .bagiannita {
+    margin-top: -380px !important;
+    padding: 0px 20px;
+  }
+
+  .lengkunganbawah {
+    margin-top: -1px;
+  }
+
+  section.acara {
+    margin-top: -100px;
+  }
+
+  section.acara .isi-acara {
+    margin-top: 300px;
+  }
 }
