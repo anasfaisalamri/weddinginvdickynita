@@ -5,6 +5,8 @@ body {
 
   left: 0;
   top: 0;
+
+  overflow-x: hidden;
 }
 
 .font-petemoss {
@@ -53,15 +55,36 @@ body {
   box-shadow: 0 0 0 0.25rem rgba(221, 221, 221, 0.5);
 }
 
+.btn-brown {
+  background-color: #986955;
+  border: 2px solid #986955;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 6px;
+}
+
+.btn-brown:hover {
+  color: #986955;
+  background-color: #fff;
+  border-color: #986955;
+}
+
+.btn-brown:focus {
+  box-shadow: 0 0 0 0.25rem rgba(221, 221, 221, 0.5);
+}
+
 .bg1 {
   /* position: absolute; */
 
-  background-image: url(../assets/img/image1.jpg);
+  background-image: url(../img/image1.jpg);
   background-position: center;
   background-repeat: no-repeat;
 
-  height: 100vh;
+  height: 1000px;
   width: 100%;
+
+  margin-top: -60px;
 
   padding: 0;
 
@@ -86,7 +109,7 @@ p {
 }
 
 .bgputih {
-  margin-top: -750px;
+  margin-top: -850px;
 }
 
 section.quote {
@@ -104,7 +127,7 @@ section.quote {
 }
 
 .sangmempelai {
-  margin-top: -550px;
+  margin-top: -530px;
   font-size: 60px;
 }
 
@@ -117,7 +140,7 @@ section.quote {
 }
 
 .bagiannita {
-  margin-top: -600px;
+  margin-top: -540px;
   /* margin-bottom: 500px; */
 }
 
@@ -131,12 +154,13 @@ section.quote {
 
 img.img-mempelai {
   border-radius: 1000px;
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
 }
 
 section.acara {
   /* position: absolute; */
 
-  background-image: url(../assets/img/image2.jpg);
+  background-image: url(../img/image2.jpg);
   background-position: center;
   background-repeat: no-repeat;
 
@@ -146,7 +170,7 @@ section.acara {
   height: 100%;
   height: auto;
 
-  margin-top: -10px;
+  margin-top: -120px;
 
   /* z-index: -1; */
 }
@@ -157,7 +181,7 @@ section.acara .isi-acara {
 
   border-radius: 30px;
 
-  margin-top: 400px;
+  margin-top: 480px;
   padding-top: 50px;
 }
 
@@ -227,6 +251,7 @@ section.gallery .bggallery {
 
 section.gallery .bggallery img {
   border-radius: 1000px;
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
 }
 
 section.gallery .imggallery {
@@ -234,12 +259,17 @@ section.gallery .imggallery {
 }
 
 section.gallery .imglengkung img {
-  margin-top: -1150px;
+  margin-top: -1050px;
   border-radius: 1000px;
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
 }
 
 section.terimakasih {
   color: #986955;
+}
+
+section.terimakasih h1 {
+  font-size: 80px;
 }
 
 section.terimakasih hr.garissamping {
@@ -247,10 +277,30 @@ section.terimakasih hr.garissamping {
   height: 2px;
 }
 
+section.terimakasih .sampaijumpa {
+  margin-top: -850px;
+}
+
+.bg3 {
+  background-image: url(../img/image3.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100%;
+  width: 100%;
+
+  min-height: 1150px;
+
+  padding: 0;
+
+  margin-top: -800px;
+}
+
 /* responsive */
 @media (max-width: 500px) {
   .pernikahan {
-    padding-top: 85%;
+    margin-top: 500px;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
   }
 
@@ -272,11 +322,15 @@ section.terimakasih hr.garissamping {
   }
 
   .bgputih {
-    margin-top: -220px !important;
+    margin-top: -300px !important;
   }
 
   section.quote {
-    margin-top: -50px !important;
+    margin-top: -100px !important;
+  }
+
+  section.quote p {
+    font-size: 16px !important;
   }
 
   .bg2 {
@@ -295,7 +349,7 @@ section.terimakasih hr.garissamping {
   }
 
   .bagiannita {
-    margin-top: -350px !important;
+    margin-top: -330px !important;
     padding: 0px 20px;
   }
 
@@ -312,15 +366,86 @@ section.terimakasih hr.garissamping {
     margin-top: 200px;
   }
 
+  section.acara .isi-acara h3 {
+    font-size: 20px !important;
+  }
+
+  section.acara .isi-acara p {
+    font-size: 16px !important;
+  }
+
   section.reservasi h1,
   h2 {
     font-size: 50px !important;
   }
+
+  section.reservasi h3 {
+    font-size: 20px;
+  }
+
+  section.reservasi p {
+    font-size: 16px !important;
+  }
+
+  section.gallery .ourgallery {
+    margin-top: -80px;
+  }
+
+  section.gallery .ourgallery h1 {
+    font-size: 45px;
+  }
+
+  section.gallery p {
+    font-size: 16px !important;
+  }
+
+  section.gallery .bggallery {
+    background-color: #986955;
+    padding-bottom: 500px;
+    margin-top: -210px;
+  }
+
+  section.gallery .imggallery {
+    margin-top: 250px;
+  }
+
+  section.gallery .imglengkung img {
+    margin-top: -780px;
+    border-radius: 1000px;
+  }
+
+  section.gallery .lengkunganbawah {
+    margin-top: -1px;
+  }
+
+  section.terimakasih h1 {
+    font-size: 50px;
+  }
+
+  section.terimakasih p {
+    font-size: 16px !important;
+  }
+
+  section.terimakasih h1.sampaijumpa {
+    font-size: 50px;
+  }
+
+  section.terimakasih img {
+    margin-top: 70px;
+  }
+
+  section.terimakasih .sampaijumpa {
+    margin-top: -315px;
+  }
+
+  .bg3 {
+    margin-top: -200px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 885px) {
+@media (min-width: 768px) and (max-width: 900px) {
   .pernikahan {
-    padding-top: 50%;
+    margin-top: 600px;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
   }
 
@@ -370,7 +495,115 @@ section.terimakasih hr.garissamping {
   }
 
   .lengkunganbawah {
+    margin-top: -2px;
+  }
+
+  section.acara {
+    margin-top: -110px;
+  }
+
+  section.acara .isi-acara {
+    margin-top: 300px;
+  }
+
+  section.gallery .ourgallery {
+    margin-top: -150px;
+  }
+
+  section.gallery .ourgallery h1 {
+    font-size: 80px;
+    margin-top: -50px;
+  }
+
+  section.gallery .bggallery {
+    background-color: #986955;
+    padding-bottom: 670px;
+    margin-top: -210px;
+  }
+
+  section.gallery .imggallery {
+    margin-top: 250px;
+  }
+
+  section.gallery .imglengkung img {
+    margin-top: -1080px;
+    border-radius: 1000px;
+  }
+
+  section.gallery .lengkunganbawah {
     margin-top: -1px;
+  }
+
+  section.terimakasih h1 {
+    font-size: 70px;
+  }
+
+  section.terimakasih img {
+    margin-top: 80px;
+  }
+
+  section.terimakasih .sampaijumpa {
+    margin-top: -550px;
+  }
+
+  .bg3 {
+    margin-top: -400px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .pernikahan {
+    padding-top: 200px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .pernikahan h1 {
+    font-size: 90px !important;
+  }
+
+  .pernikahan h4,
+  p {
+    font-size: 22px !important;
+  }
+
+  .garissamping {
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 0px auto;
+  }
+
+  .bgputih {
+    margin-top: -700px !important;
+  }
+
+  section.quote {
+    margin-top: -150px !important;
+  }
+
+  .bg2 {
+    background-color: #986955;
+    padding-bottom: 100px;
+    margin-top: -2px;
+  }
+
+  .sangmempelai {
+    margin-top: -400px !important;
+    font-size: 60px !important;
+  }
+
+  .mempelai {
+    margin-top: -250px !important;
+  }
+
+  .bagiannita {
+    margin-top: -570px !important;
+    padding: 0px 20px;
+  }
+
+  .lengkunganbawah {
+    margin-top: -2px;
   }
 
   section.acara {
@@ -378,6 +611,50 @@ section.terimakasih hr.garissamping {
   }
 
   section.acara .isi-acara {
-    margin-top: 300px;
+    margin-top: 500px;
+  }
+
+  section.gallery .ourgallery {
+    margin-top: -150px;
+  }
+
+  section.gallery .ourgallery h1 {
+    font-size: 80px;
+    margin-top: -100px;
+  }
+
+  section.gallery .bggallery {
+    background-color: #986955;
+    padding-bottom: 470px;
+    margin-top: -210px;
+  }
+
+  section.gallery .imggallery {
+    margin-top: 250px;
+  }
+
+  section.gallery .imglengkung img {
+    margin-top: -1080px;
+    border-radius: 1000px;
+  }
+
+  section.gallery .lengkunganbawah {
+    margin-top: -1px;
+  }
+
+  section.terimakasih h1 {
+    font-size: 80px;
+  }
+
+  section.terimakasih img {
+    margin-top: 80px;
+  }
+
+  section.terimakasih .sampaijumpa {
+    margin-top: -800px;
+  }
+
+  .bg3 {
+    margin-top: -650px;
   }
 }
