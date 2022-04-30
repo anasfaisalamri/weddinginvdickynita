@@ -24,12 +24,12 @@
 
     <title>Wedding Invitation | Dicky & Nita</title>
   </head>
-  <body>
-    <section class="cover">
+  <body class="overflow-hidden">
+    <section class="cover" id="cover">
       <div class="row mx-auto">
         <div class="col">
-          <img src="img/cover.jpg" class="img-fluid" alt="">
-          <div class="bg-cover"></div>
+          <img src="asset/cover.jpg" class="img-fluid" id="img-cover" alt="">
+          <div class="bg-cover" id="img-cover"></div>
         </div>
       </div>
       <div class="row mx-auto">
@@ -37,7 +37,7 @@
           <main class="text-center text-white judul">
             <h1 class="display-6">Pernikahan</h1>
             <p class="display-1 namayangnikah font-petemoss">Dicky & Nita</p>
-            <button type="button" class="btn btn-light" id="bukaundangan">Buka Undangan</button>
+            <button type="button" class="btn btn-white" id="bukaundangan">Buka Undangan</button>
           </main>
         </div>
       </div>
@@ -57,14 +57,14 @@
 
     <div class="row mx-auto">
       <div class="col-12 p-0">
-        <img src="img/bgputih.png" alt="" class="img-fluid bg-putih" />
+        <img src="asset/bgputih.png" alt="" class="img-fluid bg-putih" />
       </div>
     </div>
 
     <section class="quote container-fluid">
       <div class="row">
         <div class="col-10 text-center mx-auto">
-          <img src="img/flower.png" class="img-fluid" alt="" data-aos="fade-up" />
+          <img src="asset/flower.png" class="img-fluid" alt="" data-aos="fade-up" />
         </div>
         <div class="col-lg-10 col-md-8 col-sm-6 text-center mx-auto">
           <div class="isi-quote">
@@ -79,7 +79,7 @@
 
     <div class="row mx-auto">
       <div class="col-12 p-0">
-        <img src="img/lengkungan-atas.png" alt="" class="img-fluid lengkungan-atas" />
+        <img src="asset/lengkungan-atas.png" alt="" class="img-fluid lengkungan-atas" />
       </div>
     </div>
 
@@ -89,9 +89,9 @@
         <div class="col-12 mempelai">
           <div class="row row-cols-1 justify-content-center text-center pb-3">
             <div class="col-9 mx-auto">
-              <img src="img/dicky.jpg" class="img-mempelai img-fluid" alt="" data-aos="fade-up" />
+              <img src="asset/dicky.jpg" class="img-mempelai img-fluid" alt="" data-aos="fade-up" />
             </div>
-            <div class="col text-white pb-5">
+            <div class="col text-white mt-2 pb-5">
               <div data-aos="fade-right" data-aos-delay="400">
                 <h2 class="font-corinthia">Dicky</h2>
                 <p>Dicky Irawan</p>
@@ -102,7 +102,7 @@
           </div>
           <div class="row row-cols-1 justify-content-center text-center">
             <div class="col-9 mx-auto text-white">
-              <img src="img/nita.jpg" class="img-mempelai img-fluid" alt="" data-aos="fade-left" data-aos-duration="1000" />
+              <img src="asset/nita.jpg" class="img-mempelai img-fluid" alt="" data-aos="fade-left" data-aos-duration="1000" />
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@
 
     <div class="row mx-auto">
       <div class="col-12 p-0">
-        <img src="img/lengkungan-bawah.png" alt="" class="img-fluid lengkungan-bawah" />
+        <img src="asset/lengkungan-bawah.png" alt="" class="img-fluid lengkungan-bawah" />
           <div class="col text-white text-center bagian-nita">
             <div data-aos="fade-right" data-aos-delay="100">
               <h2 class="font-corinthia">Nita</h2>
@@ -136,7 +136,7 @@
               <div class="garis-turun my-4"></div>
 
               <div data-aos="fade-left">
-                <img src="img/diamondring.png" alt="" /> <br />
+                <img src="asset/diamondring.png" alt="" /> <br />
   
                 <div class="acara-nikah mb-4">
                   <h3 class="fs-1">Acara Nikah</h3>
@@ -148,7 +148,7 @@
               </div>
 
               <div data-aos="fade-right">
-                <img src="img/food.png" alt="" />
+                <img src="asset/food.png" alt="" />
   
                 <div class="acara-nikah my-4 pb-5">
                   <h3 class="fs-1">Resepsi</h3>
@@ -165,7 +165,7 @@
 
 
               <div data-aos="fade-up">
-                <img src="img/lovepath.png" alt="" />
+                <img src="asset/lovepath.png" alt="" />
                 <div class="acara-nikah my-4">
                   <h3 class="fs-1">Lokasi</h3>
                   <p>Jl. Sukaati Permai 1, Kelurahan Pasirluyu</p>
@@ -258,7 +258,7 @@
         </div>
         <div data-aos="fade-right">
           <div class="col pb-3">
-            <img src="img/sosialdistance.png" alt="">
+            <img src="asset/sosialdistance.png" alt="">
           </div>
           <div class="col">
             <h3>Menjaga Jarak</h3>
@@ -268,7 +268,7 @@
       </div>
       <div class="row row-cols-1 mx-auto text-center justify-content-center py-3" data-aos="fade-left">
         <div class="col pb-3">
-          <img src="img/masker.png" alt="">
+          <img src="asset/masker.png" alt="">
         </div>
         <div class="col">
           <h3>Menggunakan Masker</h3>
@@ -277,7 +277,7 @@
       </div>
       <div class="row row-cols-1 mx-auto text-center justify-content-center py-3" data-aos="fade-right">
         <div class="col pb-3">
-          <img src="img/handsanitizer.png" alt="">
+          <img src="asset/handsanitizer.png" alt="">
         </div>
         <div class="col">
           <h3>Menggunakan Hand Sanitizer</h3>
@@ -286,7 +286,7 @@
       </div>
       <div class="row row-cols-1 mx-auto text-center justify-content-center py-3" data-aos="fade-left">
         <div class="col pb-3">
-          <img src="img/handshake.png" alt="">
+          <img src="asset/handshake.png" alt="">
         </div>
         <div class="col">
           <h3>Hindari Berjabat Tangan</h3>
@@ -297,7 +297,7 @@
 
     <section class="gallery">
       <div class="row mx-auto text-center justify-content-center">
-        <img src="img/lengkungan-atas.png" class="p-0" alt="">
+        <img src="asset/lengkungan-atas.png" class="p-0" alt="">
         <div class="col-lg-6 col-sm-10 text-white our-gallery" data-aos="fade-up">
           <h1 class="font-corinthia">Our Gallery</h1>
           <hr class="garis-samping mb-5 mt-2">
@@ -309,23 +309,23 @@
       <div class="row row-cols-1 mx-auto justify-content-center text-center bg-gallery">
         <div class="img-gallery">
           <div class="col-9 mx-auto">
-            <img src="img/gallery1.jpg" class="img-fluid" alt="" data-aos="fade-right">
+            <img src="asset/gallery1.jpg" class="img-fluid" alt="" data-aos="fade-right">
           </div>
           <div class="col-9 mx-auto py-5">
-            <img src="img/gallery2.jpg" class="img-fluid" alt="" data-aos="fade-left">
+            <img src="asset/gallery2.jpg" class="img-fluid" alt="" data-aos="fade-left">
           </div>
         </div>
       </div>
 
       <div class="row mx-auto text-center justify-content-center">
-        <img src="img/lengkungan-bawah.png" class="lengkungan-bawah p-0" alt="" >
+        <img src="asset/lengkungan-bawah.png" class="lengkungan-bawah p-0" alt="" >
         <div class="col-9 img-lengkung">
-          <img src="img/gallery3.jpg" class="img-fluid" alt="" data-aos="fade-right">
+          <img src="asset/gallery3.jpg" class="img-fluid" alt="" data-aos="fade-right">
         </div>
       </div>
     </section>
 
-    <section class="terimakasih">
+    <section class="ucapan-terbaik">
       <div class="row row-cols-1 mx-auto text-center justify-content-center">
         <div class="col" data-aos="fade-left">
           <h1 class="font-corinthia">Ucapan Terbaikmu</h1>
@@ -389,7 +389,7 @@
                   <div class="modal-body">
                     <p>Silahkan kirim kado ke alamat berikut : <br> 
                     <span class="fw-bold fs-3">Nita Yuliani</span>  <br>
-                    Jl Mengger Girang Rt 09 RW 08 Kelurahan Pasirluyu Kecamatan Regol Kota Bandung . 40254
+                    Jl Mengger Girang Rt 09 RW 08, Kelurahan Pasirluyu, Kecamatan Regol, Kota Bandung. 40254
                     </p>
                   </div>
                 </div>
@@ -414,10 +414,10 @@
                     </p>
                     <div class="d-flex row-cols-2 mx-auto justify-content-center">
                       <div class="col">
-                        <img src="img/rekening-dicky.png" class="img-fluid" alt="">
+                        <img src="asset/rekening-dicky.png" class="img-fluid" alt="">
                       </div>
                       <div class="col">
-                        <img src="img/rekening-nita.png" class="img-fluid" alt="">
+                        <img src="asset/rekening-nita.png" class="img-fluid" alt="">
                       </div>
                     </div>
                   </div>
@@ -431,7 +431,7 @@
         </div>
       </div>
       <div class="row mx-auto justify-content-center">
-        <img src="img/bgputih2.png" class="p-0 img-fluid" alt="">
+        <img src="asset/bgputih2.png" class="p-0 img-fluid" alt="">
         <div class="col-12 text-center" data-aos="fade-left" data-aos-offset="-300">
           <h1 class="font-corinthia sampaijumpa">
             Sampai Jumpa Di Hari Bahagia Kami.

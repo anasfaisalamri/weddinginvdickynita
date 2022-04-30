@@ -1,9 +1,23 @@
+// AOS
 AOS.init({
   duration: 1000,
-  delay: 200,
+  delay: 150,
   once: true,
 });
 
+// Cover
+let cover = document.getElementById("cover");
+let btnBukaUndangan = document.getElementById("bukaundangan");
+
+console.log(cover);
+console.log(btnBukaUndangan);
+
+btnBukaUndangan.addEventListener("click", function () {
+  document.body.classList.remove("overflow-hidden");
+  cover.setAttribute("data-aos", "fade-down");
+});
+
+// form Reservasi
 const scriptURLReservasi = "https://script.google.com/macros/s/AKfycbxIakiEtS-G9WHyUqfHp5TP2X7JC0o5svJ0Atrh4oH-Eq8Z0cFW5PCzyoXczMayVJrW6Q/exec";
 const formReservasi = document.forms["reservasi"];
 const btnKirimReservasi = document.querySelector(".btn-kirim-reservasi");
@@ -58,6 +72,7 @@ formReservasi.addEventListener("submit", (e) => {
   }
 });
 
+// form Ucapan Terbaik
 const scriptURLUcapan = "https://script.google.com/macros/s/AKfycbybCvxSoiYHoe0GVL4rUMaVjNOVEmInEkA2d9bOiao1hIj9wzMs4muyg7_EJQW_NDO9/exec";
 const formUcapan = document.forms["ucapanTerbaikDickyNita"];
 const btnKirimUcapan = document.querySelector(".btn-kirim-ucapan");
