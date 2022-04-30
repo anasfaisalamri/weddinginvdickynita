@@ -7,8 +7,10 @@ body {
   top: 0;
 
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
+/* Utility */
 .font-petemoss {
   font-family: "petemoss";
 }
@@ -73,7 +75,51 @@ body {
 .btn-brown:focus {
   box-shadow: 0 0 0 0.25rem rgba(221, 221, 221, 0.5);
 }
+/* Akhir Utility */
+/* section.cover {
+  position: absolute;
+  z-index: 99;
+} */
 
+section.cover img {
+  min-height: 100%;
+  min-width: 1600px;
+
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  /* margin-top: -100px; */
+}
+
+section.cover .judul {
+  position: relative;
+  z-index: 99;
+  margin: 0;
+  top: 400px;
+  left: 0;
+}
+
+section.cover .bg-cover {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  position: absolute;
+  z-index: 99;
+}
+/* Cover */
+
+/* Akhir Cover */
+
+/* Pernikahan */
 .bg1 {
   /* position: absolute; */
 
@@ -108,10 +154,12 @@ p {
   font-size: 22px;
 }
 
-.bgputih {
+.bg-putih {
   margin-top: -850px;
 }
+/* Akhir Pernikahan */
 
+/* Quote */
 section.quote {
   margin-top: -200px;
 }
@@ -120,13 +168,15 @@ section.quote {
   margin-top: -20px;
   font-size: 18px;
 }
+/* Akhir Quote */
 
+/* Memperlai */
 .bg2 {
   background-color: #986955;
   margin-top: -1px;
 }
 
-.sangmempelai {
+.sang-mempelai {
   margin-top: -530px;
   font-size: 60px;
 }
@@ -139,24 +189,27 @@ section.quote {
   font-size: 65px;
 }
 
-.bagiannita {
+.bagian-nita {
   margin-top: -540px;
   /* margin-bottom: 500px; */
 }
 
-.lengkunganbawah {
+.lengkungan-bawah {
   margin-top: -1px;
 }
 
-.bagiannita h2 {
+.bagian-nita h2 {
   font-size: 65px;
 }
 
 img.img-mempelai {
+  margin-top: 50px;
   border-radius: 1000px;
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
 }
+/* Akhir Mempelai */
 
+/* Acara */
 section.acara {
   /* position: absolute; */
 
@@ -189,7 +242,7 @@ section.acara .isi-acara {
   font-size: 80px;
 }
 
-.garisturun {
+.garis-turun {
   width: 5px;
   height: 100px;
   border-radius: 10px;
@@ -197,22 +250,24 @@ section.acara .isi-acara {
   margin: 0px auto;
 }
 
-hr.garissamping {
+hr.garis-samping {
   height: 5px;
   background-color: white !important;
   opacity: 1 !important;
   border-radius: 10px !important;
 }
 
-.acaranikah {
+.acara-nikah {
   line-height: 25px;
 }
+/* Akhir Acara */
 
+/* Reservasi */
 section.reservasi {
   color: #986955;
 }
 
-section.reservasi hr.garissamping {
+section.reservasi hr.garis-samping {
   background-color: #986955 !important;
   height: 2px;
 }
@@ -229,41 +284,45 @@ section.reservasi h1 {
 section.reservasi h2 {
   font-size: 65px;
 }
+/* Akhir Reservasi */
 
-section.gallery .ourgallery {
+/* Gallery */
+section.gallery .our-gallery {
   margin-top: -450px;
 }
 
-section.gallery .ourgallery h1 {
+section.gallery .our-gallery h1 {
   font-size: 80px;
 }
 
-section.gallery .ourgallery hr.garissamping {
+section.gallery .our-gallery hr.garis-samping {
   width: 140px;
   height: 2px;
   margin: auto;
 }
 
-section.gallery .bggallery {
+section.gallery .bg-gallery {
   background-color: #986955;
   padding-bottom: 400px;
 }
 
-section.gallery .bggallery img {
+section.gallery .bg-gallery img {
   border-radius: 1000px;
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
 }
 
-section.gallery .imggallery {
+section.gallery .img-gallery {
   margin-top: -120px;
 }
 
-section.gallery .imglengkung img {
-  margin-top: -1050px;
+section.gallery .img-lengkung img {
+  margin-top: -1150px;
   border-radius: 1000px;
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
 }
+/* Akhir Gallery */
 
+/* Ucapan Terbaik */
 section.terimakasih {
   color: #986955;
 }
@@ -272,7 +331,7 @@ section.terimakasih h1 {
   font-size: 80px;
 }
 
-section.terimakasih hr.garissamping {
+section.terimakasih hr.garis-samping {
   background-color: #986955 !important;
   height: 2px;
 }
@@ -296,9 +355,18 @@ section.terimakasih .sampaijumpa {
 
   margin-top: -800px;
 }
+/* Akhir Ucara Terbaik */
 
 /* responsive */
 @media (max-width: 500px) {
+  section.cover img {
+    min-height: 100%;
+    min-width: 1024px;
+
+    left: 50%;
+    margin-left: -512px;
+  }
+
   .pernikahan {
     margin-top: 500px;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
@@ -308,12 +376,11 @@ section.terimakasih .sampaijumpa {
     font-size: 70px !important;
   }
 
-  .pernikahan h4,
-  p {
+  .pernikahan h4 {
     font-size: 18px !important;
   }
 
-  .garissamping {
+  .garis-samping {
     width: 300px;
     height: 10px;
     border-radius: 10px;
@@ -321,7 +388,7 @@ section.terimakasih .sampaijumpa {
     margin: 0px auto;
   }
 
-  .bgputih {
+  .bg-putih {
     margin-top: -300px !important;
   }
 
@@ -330,30 +397,45 @@ section.terimakasih .sampaijumpa {
   }
 
   section.quote p {
-    font-size: 16px !important;
+    font-size: 12px !important;
+    margin: 0 35px 20px 35px;
   }
 
-  .bg2 {
+  section.bagian-mempelai .bg2 {
     background-color: #986955;
     padding-bottom: 250px;
     margin-top: -1px;
   }
 
-  .sangmempelai {
+  section.bagian-mempelai .sang-mempelai {
     margin-top: -100px !important;
     font-size: 50px !important;
   }
 
-  .mempelai {
+  section.bagian-mempelai .mempelai {
     margin-top: -0px !important;
   }
 
-  .bagiannita {
+  section.bagian-mempelai img.img-mempelai {
+    margin-top: 0px;
+  }
+
+  section.bagian-mempelai .mempelai p.fs-6 {
+    font-size: 12px;
+    margin: 0 35px;
+  }
+
+  .bagian-nita {
     margin-top: -330px !important;
     padding: 0px 20px;
   }
 
-  .lengkunganbawah {
+  .bagian-nita p.fs-6 {
+    font-size: 12px;
+    margin: 0 35px;
+  }
+
+  .lengkungan-bawah {
     margin-top: -55px;
   }
 
@@ -367,11 +449,12 @@ section.terimakasih .sampaijumpa {
   }
 
   section.acara .isi-acara h3 {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 
   section.acara .isi-acara p {
-    font-size: 16px !important;
+    font-size: 12px !important;
+    margin: 0 35px;
   }
 
   section.reservasi h1,
@@ -384,37 +467,42 @@ section.terimakasih .sampaijumpa {
   }
 
   section.reservasi p {
-    font-size: 16px !important;
+    font-size: 12px !important;
+    margin: 0px 35px;
   }
 
-  section.gallery .ourgallery {
+  section.gallery .our-gallery {
     margin-top: -80px;
   }
 
-  section.gallery .ourgallery h1 {
+  section.gallery .our-gallery h1 {
     font-size: 45px;
   }
 
   section.gallery p {
-    font-size: 16px !important;
+    font-size: 12px !important;
+    margin: 0 35px;
   }
 
-  section.gallery .bggallery {
+  section.gallery .bg-gallery {
     background-color: #986955;
-    padding-bottom: 500px;
-    margin-top: -210px;
+    padding-bottom: 360px;
+    margin-top: -165px;
   }
 
-  section.gallery .imggallery {
-    margin-top: 250px;
+  section.gallery .img-gallery {
+    margin-top: 220px;
+
+    /* height: 100%;
+    max-width: 300px; */
   }
 
-  section.gallery .imglengkung img {
-    margin-top: -780px;
+  section.gallery .img-lengkung img {
+    margin-top: -655px;
     border-radius: 1000px;
   }
 
-  section.gallery .lengkunganbawah {
+  section.gallery .lengkungan-bawah {
     margin-top: -1px;
   }
 
@@ -423,7 +511,8 @@ section.terimakasih .sampaijumpa {
   }
 
   section.terimakasih p {
-    font-size: 16px !important;
+    font-size: 12px !important;
+    margin: 0 35px;
   }
 
   section.terimakasih h1.sampaijumpa {
@@ -458,7 +547,7 @@ section.terimakasih .sampaijumpa {
     font-size: 22px !important;
   }
 
-  .garissamping {
+  .garis-samping {
     width: 300px;
     height: 10px;
     border-radius: 10px;
@@ -466,7 +555,7 @@ section.terimakasih .sampaijumpa {
     margin: 0px auto;
   }
 
-  .bgputih {
+  .bg-putih {
     margin-top: -520px !important;
   }
 
@@ -480,7 +569,7 @@ section.terimakasih .sampaijumpa {
     margin-top: -1px;
   }
 
-  .sangmempelai {
+  .sang-mempelai {
     margin-top: -260px !important;
     font-size: 60px !important;
   }
@@ -489,12 +578,16 @@ section.terimakasih .sampaijumpa {
     margin-top: -100px !important;
   }
 
-  .bagiannita {
+  section.bagian-mempelai img.img-mempelai {
+    margin-top: 0px;
+  }
+
+  .bagian-nita {
     margin-top: -380px !important;
     padding: 0px 20px;
   }
 
-  .lengkunganbawah {
+  .lengkungan-bawah {
     margin-top: -2px;
   }
 
@@ -506,31 +599,31 @@ section.terimakasih .sampaijumpa {
     margin-top: 300px;
   }
 
-  section.gallery .ourgallery {
+  section.gallery .our-gallery {
     margin-top: -150px;
   }
 
-  section.gallery .ourgallery h1 {
+  section.gallery .our-gallery h1 {
     font-size: 80px;
     margin-top: -50px;
   }
 
-  section.gallery .bggallery {
+  section.gallery .bg-gallery {
     background-color: #986955;
     padding-bottom: 670px;
     margin-top: -210px;
   }
 
-  section.gallery .imggallery {
+  section.gallery .img-gallery {
     margin-top: 250px;
   }
 
-  section.gallery .imglengkung img {
+  section.gallery .img-lengkung img {
     margin-top: -1080px;
     border-radius: 1000px;
   }
 
-  section.gallery .lengkunganbawah {
+  section.gallery .lengkungan-bawah {
     margin-top: -1px;
   }
 
@@ -566,7 +659,7 @@ section.terimakasih .sampaijumpa {
     font-size: 22px !important;
   }
 
-  .garissamping {
+  .garis-samping {
     width: 300px;
     height: 10px;
     border-radius: 10px;
@@ -574,7 +667,7 @@ section.terimakasih .sampaijumpa {
     margin: 0px auto;
   }
 
-  .bgputih {
+  .bg-putih {
     margin-top: -700px !important;
   }
 
@@ -588,7 +681,7 @@ section.terimakasih .sampaijumpa {
     margin-top: -2px;
   }
 
-  .sangmempelai {
+  .sang-mempelai {
     margin-top: -400px !important;
     font-size: 60px !important;
   }
@@ -597,12 +690,16 @@ section.terimakasih .sampaijumpa {
     margin-top: -250px !important;
   }
 
-  .bagiannita {
+  section.bagian-mempelai img.img-mempelai {
+    margin-top: 0px;
+  }
+
+  .bagian-nita {
     margin-top: -570px !important;
     padding: 0px 20px;
   }
 
-  .lengkunganbawah {
+  .lengkungan-bawah {
     margin-top: -2px;
   }
 
@@ -614,31 +711,31 @@ section.terimakasih .sampaijumpa {
     margin-top: 500px;
   }
 
-  section.gallery .ourgallery {
+  section.gallery .our-gallery {
     margin-top: -150px;
   }
 
-  section.gallery .ourgallery h1 {
+  section.gallery .our-gallery h1 {
     font-size: 80px;
     margin-top: -100px;
   }
 
-  section.gallery .bggallery {
+  section.gallery .bg-gallery {
     background-color: #986955;
     padding-bottom: 470px;
     margin-top: -210px;
   }
 
-  section.gallery .imggallery {
+  section.gallery .img-gallery {
     margin-top: 250px;
   }
 
-  section.gallery .imglengkung img {
+  section.gallery .img-lengkung img {
     margin-top: -1080px;
     border-radius: 1000px;
   }
 
-  section.gallery .lengkunganbawah {
+  section.gallery .lengkungan-bawah {
     margin-top: -1px;
   }
 
