@@ -6,16 +6,20 @@ AOS.init({
 });
 
 // Cover
-let cover = document.getElementById("cover");
-let btnBukaUndangan = document.getElementById("bukaundangan");
-
-console.log(cover);
-console.log(btnBukaUndangan);
+const cover = document.getElementById("cover");
+const btnBukaUndangan = document.getElementById("bukaundangan");
 
 btnBukaUndangan.addEventListener("click", function () {
   document.body.classList.remove("overflow-hidden");
   cover.setAttribute("data-aos", "fade-down");
+
+  play();
 });
+
+function play() {
+  let makAudio = document.getElementById("playaudio");
+  makAudio.innerHTML = "<audio loop autoplay><source src='asset/LoveTheme.mp3' type='audio/ogg'><embed src='asset/LoveTheme.mp3' autostart='true' loop='true' hidden='true'></audio>";
+}
 
 // form Reservasi
 const scriptURLReservasi = "https://script.google.com/macros/s/AKfycbxIakiEtS-G9WHyUqfHp5TP2X7JC0o5svJ0Atrh4oH-Eq8Z0cFW5PCzyoXczMayVJrW6Q/exec";
@@ -33,19 +37,13 @@ formReservasi.addEventListener("submit", (e) => {
 
   if (inputNama == "" || inputNohp == "") {
     classAlert.classList.replace("alert-success", "alert-danger");
-    // classAlert.classList.remove("alert-success");
-    // classAlert.classList.add("alert-danger");
 
-    // let alertNama = document.getElementById("alertNoNameNoHp");
     alertTerimakasihReservasi.innerHTML = "<strong>Maaf!</strong> Nama atau No Handpone anda belum di isi.";
 
     alertTerimakasihReservasi.classList.replace("d-none", "d-block");
   } else {
     let alertAda = document.querySelector(".alert-terimakasih-reservasi");
     alertAda.classList.replace("alert-danger", "d-none");
-
-    // alertAda.classList.remove("d-none");
-    // alertAda.classList.remove("alert-danger");
 
     // ketika tombol submit diklik
     // tampilkan tombol loading, hilangkan tombol kirim
@@ -93,7 +91,6 @@ formUcapan.addEventListener("submit", (e) => {
     alertUcapan.classList.replace("d-none", "d-block");
   } else {
     let alertTampil = document.querySelector(".alert-ucapan");
-    // console.log(alertTampil);
     alertTampil.classList.replace("d-block", "d-none");
 
     // ketika tombol submit diklik
