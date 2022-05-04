@@ -14,7 +14,6 @@ body {
 
   height: 100%;
   overflow-x: hidden;
-  /* overflow-y: auto; */
   width: 100%;
 }
 
@@ -111,8 +110,6 @@ section.cover .judul {
 section.cover .bg-cover {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  min-height: 1600px;
-
   height: 100%;
 
   top: 0;

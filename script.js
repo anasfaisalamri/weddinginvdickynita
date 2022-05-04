@@ -5,7 +5,7 @@
 
 document.documentElement.scrollTop = 0;
 document.body.scrollTop = 0;
-document.body.classList.add("overflow-hidden");
+// document.body.classList.add("overflow-hidden");
 
 // AOS
 AOS.init({
