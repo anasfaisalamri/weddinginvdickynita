@@ -5,7 +5,7 @@
 
 document.documentElement.scrollTop = 0;
 document.body.scrollTop = 0;
-// document.body.classList.add("overflow-hidden");
+document.body.style.overflowY = "hidden";
 
 // AOS
 AOS.init({
@@ -19,7 +19,7 @@ const cover = document.getElementById("cover");
 const btnBukaUndangan = document.getElementById("bukaundangan");
 
 btnBukaUndangan.addEventListener("click", function () {
-  document.body.classList.remove("overflow-hidden");
+  document.body.style.overflowY = "scroll";
   cover.setAttribute("data-aos", "fade-down");
 
   play();
