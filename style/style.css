@@ -1,3 +1,9 @@
+/* html {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+} */
+
 body {
   font-family: "merriweather", serif;
 
@@ -6,8 +12,10 @@ body {
   left: 0;
   top: 0;
 
+  height: 100%;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  /* overflow-y: auto; */
+  width: 100%;
 }
 
 /* Utility */
@@ -121,7 +129,7 @@ section.cover .bg-cover {
 .bg1 {
   /* position: absolute; */
 
-  background-image: url(../asset/image1.jpg);
+  background-image: url(../asset/bg-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
 
@@ -189,7 +197,6 @@ section.quote {
 
 .bagian-nita {
   margin-top: -600px;
-  /* margin-bottom: 500px; */
 }
 
 .lengkungan-bawah {
@@ -238,6 +245,10 @@ section.acara .isi-acara {
 
 .isi-acara h2 {
   font-size: 80px;
+}
+
+section.acara img.img-acara {
+  width: 150px;
 }
 
 .garis-turun {
@@ -301,7 +312,7 @@ section.gallery .our-gallery hr.garis-samping {
 
 section.gallery .bg-gallery {
   background-color: #986955;
-  padding-bottom: 400px;
+  padding-bottom: 700px;
 }
 
 section.gallery .bg-gallery img {
@@ -314,7 +325,7 @@ section.gallery .img-gallery {
 }
 
 section.gallery .img-lengkung img {
-  margin-top: -1150px;
+  margin-top: -1420px;
   border-radius: 1000px;
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.3));
 }
@@ -374,7 +385,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   .bg1 {
-    background-image: url(../asset/image1.jpg);
+    background-image: url(../asset/bg-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
 
@@ -505,7 +516,7 @@ section.ucapan-terbaik .sampaijumpa {
 
   section.gallery .bg-gallery {
     background-color: #986955;
-    padding-bottom: 360px;
+    padding-bottom: 400px;
     margin-top: -165px;
   }
 
@@ -517,7 +528,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   section.gallery .img-lengkung img {
-    margin-top: -655px;
+    margin-top: -670px;
     border-radius: 1000px;
   }
 
@@ -565,7 +576,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   .bg1 {
-    background-image: url(../asset/image1.jpg);
+    background-image: url(../asset/bg-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
 
@@ -654,7 +665,7 @@ section.ucapan-terbaik .sampaijumpa {
 
   section.gallery .bg-gallery {
     background-color: #986955;
-    padding-bottom: 670px;
+    padding-bottom: 720px;
     margin-top: -210px;
   }
 
@@ -663,7 +674,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   section.gallery .img-lengkung img {
-    margin-top: -1100px;
+    margin-top: -1160px;
     border-radius: 1000px;
   }
 
@@ -706,7 +717,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   .bg1 {
-    background-image: url(../asset/image1.jpg);
+    background-image: url(../asset/bg-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
 
@@ -795,7 +806,7 @@ section.ucapan-terbaik .sampaijumpa {
 
   section.gallery .bg-gallery {
     background-color: #986955;
-    padding-bottom: 570px;
+    padding-bottom: 900px;
     margin-top: -210px;
   }
 
@@ -804,7 +815,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   section.gallery .img-lengkung img {
-    margin-top: -1080px;
+    margin-top: -1420px;
     border-radius: 1000px;
   }
 
@@ -847,7 +858,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   .bg1 {
-    background-image: url(../asset/image1.jpg);
+    background-image: url(../asset/bg-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
 
@@ -936,7 +947,7 @@ section.ucapan-terbaik .sampaijumpa {
 
   section.gallery .bg-gallery {
     background-color: #986955;
-    padding-bottom: 570px;
+    padding-bottom: 870px;
     margin-top: -210px;
   }
 
@@ -945,7 +956,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   section.gallery .img-lengkung img {
-    margin-top: -1180px;
+    margin-top: -1470px;
     border-radius: 1000px;
   }
 
@@ -988,7 +999,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   .bg1 {
-    background-image: url(../asset/image1.jpg);
+    background-image: url(../asset/bg-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
 
@@ -1077,7 +1088,7 @@ section.ucapan-terbaik .sampaijumpa {
 
   section.gallery .bg-gallery {
     background-color: #986955;
-    padding-bottom: 570px;
+    padding-bottom: 850px;
     margin-top: -210px;
   }
 
@@ -1086,7 +1097,7 @@ section.ucapan-terbaik .sampaijumpa {
   }
 
   section.gallery .img-lengkung img {
-    margin-top: -1250px;
+    margin-top: -1500px;
     border-radius: 1000px;
   }
 
