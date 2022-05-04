@@ -5,7 +5,11 @@
 
 document.documentElement.scrollTop = 0;
 document.body.scrollTop = 0;
-document.body.style.overflowY = "hidden";
+
+window.onload = function () {
+  document.body.style.overflowY = "hidden";
+  document.body.style.overflowX = "hidden";
+};
 
 // AOS
 AOS.init({
